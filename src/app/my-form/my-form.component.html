@@ -1,0 +1,19 @@
+<form [formGroup] = "numberForm" (ngSubmit) = "onSubmit()">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Розразунок ряду
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position = "floating">Введіть число (n>0)</ion-label>
+        <ion-input type = "number" id = "number" formControlName = "number"></ion-input>
+      </ion-item>
+      <ion-button type = "submit" expand = "block" fill = "outline" [disabled] = "!numberForm.valid">Порахувати</ion-button>
+      <ion-item>
+        Result: {{result}}
+      </ion-item>
+  </ion-card-content>
+  </ion-card>
+</form>
