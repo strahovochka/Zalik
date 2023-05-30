@@ -1,0 +1,7 @@
+{
+  "name": "ZalikKPP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
